@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Jeevit Servicios Inmobiliarios</title>
+		<link rel="shortcut icon" href="..\imagenes\favicon.png">
+			<link rel="stylesheet" type="text/css" href="..\css\style.css">
+	</head>
+	<body>
+		<header>
+			<section class="cabecera" >
+				<div >
+					<a href="https://facebook.com" target="_blank">
+						<img src="..\imagenes\facebook-icon.png" alt="icono de facebook"class="cabeceraIconSm">
+					</a>
+					<a href="https://instagram.com" target="_blank">
+						<img src="..\imagenes\instagram-icon.png" alt="icono de instagram"class="cabeceraIconSm">
+					</a>
+					<a href="https://web.whatsapp.com" target="_blank">
+						<img src="..\imagenes\whatsapp-icon.png" alt="icono de whatsapp"class="cabeceraIconSm">
+					</a>
+				</div>
+				<div class="tituloCabecera">
+					<p>Jeevit Servicios Inmobiliarios</p>
+				</div> 
+			</section>
+
+			<nav class= "barraNav">
+				<div class="dropdown">
+				    <button class="dropbtn"><img src="..\imagenes\lista.png" alt="menu de opciones" class= "menuHamburguesaIcon"></button>
+
+					<div class="dropdown-content">
+
+						<a href="venta.html">PROPIEDADES EN VENTA</a>
+						<a href="renta.html">PROPIEDADES EN RENTA</a>
+						<a href="traspaso.html">TRASPASOS</a>
+						<a href="registro.html">REGISTRATE</a>
+					</div>
+				</div>
+				<div class="divLogo">
+					<a href="..\index.html">
+					<img src="..\imagenes\logo.png" alt="logo de Jeevit" class="logo">
+				</div>
+			
+				<div>		
+					<a href="..\index.html #iniciar-sesion"><button class="btnIniciaSesion">Inicia Sesión</button ></a>
+				</div>			
+			</nav>
+		</header>
+		<h1 class="tituloPrincipal">REGISTRATE</h1>
+	<main>
+	<P>----formulario------</P>
+	 <section id="registro" class="inicioContactoSesion">
+		<div class="formRegistro">
+			<h3>INGRESA TUS DATOS</h3>	
+			<form action="envio.php" class="formRegistro altura" >
+				<label for="name">NOMBRE</label>
+				<input type="text" id="name" placeholder="NOMBRE"> 
+
+				<label for="edad">EDAD</label> 
+				<input type="text" id="edad" placeholder="EDAD">
+
+				<label for="direction">DIRECCION</label>
+				<input type="text" id="direction" placeholder="DIRECCION"> 
+
+				<label for="contact">TELEFONO</label>
+				<input type="numero" id="contact" placeholder="TELEFONO">
+
+				<label for="email">CORREO ELECTRONICO</label>
+				<input type="email" id="email" placeholder="CORREO ELECTRONICO">				
+				<input type="submit" value="CONTINUAR">
+			</form>
+		</div>
+	  </section>
+	</main>
+	<footer class="pie">
+		<em>JEEVIT SERVICIOS INMOBILIARIOS</em>
+	</footer>
+	</body>
+</html>

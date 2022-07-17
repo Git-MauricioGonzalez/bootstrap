@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Roboto:wght@200;300;400;500&display=swap');
+/*reset*/
+*{
+	font-family: 'Montserrat', sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+html{
+	min-width: 	320px;
+}
+body{
+	height: auto;
+	background-color: #EBA973;
+}
+h3 {
+	padding-top: 1rem;
+	color: #AD4E00;
+	font-size: large;
+	text-align: center;
+}
+
+.cabecera{
+	display: flex;
+	padding: 10px;
+	background-color: 	#6B4D34	;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cabeceraIconSm{
+	width: 2rem;
+	text-decoration-style: none;
+}
+.cabeceraIconSm:hover
+{
+width: 	2.1rem;
+}
+.tituloCabecera{
+	font-size: large;
+	color:white;
+}
+
+.barraNav{ 
+	display: flex;
+	background-color: #F0DCCC ;
+	justify-content:space-around;
+	align-items: flex-end;
+}
+
+.logo{
+	width: 15rem;
+}
+
+
+.btnIniciaSesion{/*boton de iniciar sesion en cabecera*/
+	background-color: #6B4D34; /* Green */
+    border: none;
+    color: white;
+    padding: 5px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+.btnIniciaSesion:hover
+{
+	background-color: #9E724D;	
+}
+
+/*____________menu hamburguesa_________________________________________________*/
+.menuHamburguesaIcon{
+    width:2rem;
+}
+.dropbtn {
+    padding: .5rem;
+    border: none;
+    background-color: #F0DCCC;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(240, 220, 204, .9);
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #6B4D34;
+    padding: 16px 12px;
+    text-decoration: none;
+    display: block;
+    font-weight: 400;
+}
+
+.dropdown-content a:hover {background-color:  #EBA973;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #F0DCCC;}
+
+
+/*____________TERMINA EL HEADER_________________________________________________*/
+
+
+.slogan{
+	padding: 8px;
+	text-align: center;
+	font-size: medium;
+	color: 	#6B4D34;
+	font-weight: 500;
+	
+}
+
+.tituloPrincipal{
+	padding: 8px;
+	font-size: large;
+	text-align: center;
+	color: #6B4D34;
+}
+
+.navProductos{
+	display:inline-block;
+	text-align: center;
+		
+}
+.productos{ /*imagenes de la navegacion*/
+	font-size: 1.5rem;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	margin: 2%;
+
+}
+
+.encima{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 90%;
+	padding: 5%;
+	background-color:rgba(240, 220, 204, .7) ;
+	color: #AD4E00;
+	font-size: x-large;
+	font-weight: 500;
+}
+
+.cabeceraImgMd{
+	width: 80vw;	
+	margin: 0 auto;
+}
+/* ---------------termina el main------------------ */
+
+
+.buscarPropiedades{
+	margin-top: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	}
+.buscarPropiedades input{
+	padding: 10px 60px;
+	margin: 10px;
+	border-radius: 6px;
+	
+} 
+.divBuscarPropiedades{
+    display: block;
+    text-align: right;
+    width: 100%;
+    position: relative;
+}
+.lupaIcon{
+	width: 20px;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+.mapaBusqueda{
+	display:flex;
+	width:96vw;
+	height:auto;
+	padding: .5rem;
+	justify-content: center;
+}
+.somos{
+	padding-top: 1rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.quienesSomos{
+	font-size: x-large;
+	background-color: chocolate;
+	color: blanchedalmond;
+	text-align: center;
+	padding: 1rem;
+}
+ 
+.textoQuienesSomos{
+	font-size: large;
+	font-weight: 200;
+	background-color: blanchedalmond;
+	color: chocolate;
+	text-align: justify;
+	padding: 1rem;
+}
+.bannerRegistro{
+padding-top: .5rem;
+}
+.imgBannerRegistro{
+width: 99vw;
+height: auto;
+}
+
+.inicioContacto{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr;
+grid-template-areas:"inicioSesion" 
+"contactanos";
+padding-top: 2rem;
+justify-content: center;
+text-align: center;
+
+}
+
+.altura{
+height:100%;
+}
+
+
+.inicioSesion{
+	display: flex;
+	background-color: blanchedalmond;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+	font-size: x-large;
+    grid-area: inicioSesion;
+
+}
+form { 
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin: 30px;
+}
+form input{
+	padding: 10px 60px;
+	margin: 10px;
+	text-align: center;
+	border-radius: 6px;
+}
+.contactanos{ 
+display: flex ;
+flex-direction: column;
+justify-content: center;
+justify-items: center;
+
+
+}
+ 
+.redesIcon{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+padding-top: 2rem;
+}
+
+iframe{/*tamaño mapa movil*/
+width:95vw;
+height: 40vh;
+}
+
+.pie{
+	background-color: rgb(56, 53, 33);
+	color: white;
+	font-size: large;
+	justify-content: center;
+	margin-top: 2rem;
+	height: 2.5rem;
+	display: flex;
+	align-items: center;
+}
+.formRegistro{
+	display: flex;
+	margin: 1rem;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content:space-between;
+	font-size: medium;
+}
+
+@media only screen	and (max-width: 371px){
+
+	.tituloCabecera{
+	display: none;
+		
+	}
+	.cabecera{
+		justify-content: space-around;	
+	}
+	.logo{
+	width: 10rem;
+}
+.btnIniciaSesion{
+    font-size: .8rem;
+}
+.slogan{
+	font-size: small;
+	font-weight: 500;
+	
+}
+
+.tituloPrincipal{
+	font-size: medium;
+	font-weight: 200;
+	}
+	.buscarPropiedades h3{
+	font-size: medium;
+	}
+	.encima{
+	font-size: large;
+	}
+	.pie{
+	font-size: medium;
+	width: 100vw
+}
+}
+
+@media only screen	and (min-width: 768px){
+
+.contactanos{ 
+height: 80vh;
+}
+
+.inicioContacto{
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+grid-template-areas:"inicioSesion contactanos" 
+"inicioSesion contactanos";
+height: 80vh;
+}
+.contactanos iframe{/*tamaño mapa movil*/
+width:45vw;
+}
+
+
+}
+@media only screen	and (min-width: 1024px){
+.cabeceraImgMd{
+	width: 100%;
+}
+.navProductos {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.encima{
+	font-size: large;
+	font-weight: 500;
+}
+
+.mision{
+	flex-direction: column-reverse;
+}
+
+.somos{
+	flex-direction: row;
+}
+
+
+}
