@@ -1,0 +1,28 @@
+javascrit
+// ver mas
+const section = document.querySelector("#contenido");
+const button = document.querySelector("#verMas");
+//button.addEventListener("click", leerMas)
+
+//function leerMas ()
+button.onclick= function (){
+  if (section.className === "abierto") {
+    section.className = "";
+    button.textContent = "Ver mas"
+  }
+  else { 
+    section.className = "abierto";
+    button.textContent = "Mostrar menos"
+  }
+}
+
+
+ccs
+section.abierto{
+	height: 100vh
+}
+
+HTML
+<section onclick="leerMas()">
+<section id="leerMas()">
+<button  id="verMas"> Ver mas</button>
