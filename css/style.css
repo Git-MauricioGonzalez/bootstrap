@@ -12,6 +12,13 @@ body{
 	height: auto;
 	background-color: #EBA973;
 }
+
+h2 {
+	padding-top: 1rem;
+	color: #AD4E00;
+	font-size: xx-large;
+	text-align: center;
+}
 h3 {
 	padding-top: 1rem;
 	color: #AD4E00;
@@ -118,8 +125,8 @@ width: 	2.1rem;
 }
 
 .tituloPrincipal{
-	padding: 8px;
-	font-size: large;
+	margin: 1rem;
+	font-size: xx-large;
 	text-align: center;
 	color: #6B4D34;
 }
@@ -142,7 +149,7 @@ width: 	2.1rem;
 	position: absolute;
 	bottom: 0px;
 	left: 0px;
-	width: 90%;
+	width: 100%;
 	padding: 5%;
 	background-color:rgba(240, 220, 204, .7) ;
 	color: #AD4E00;
@@ -246,14 +253,14 @@ height:100%;
     grid-area: inicioSesion;
 
 }
-form { 
+.inicioSesion form { 
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
 	margin: 30px;
 }
-form input{
+.inicioSesion form input{
 	padding: 10px 60px;
 	margin: 10px;
 	text-align: center;
@@ -315,6 +322,18 @@ height: 40vh;
 	
 }
 
+.tx-carousel{
+	font-size: large;
+	font-weight: 300;
+  color: rgb(56, 53, 33);
+	border-radius: 20px;
+	margin-bottom: 1rem;
+	background: linear-gradient(rgba(240, 220, 204, .5),#EBA973 );
+}
+.carousel{
+	margin: 0 auto;
+	width: 75%;
+} 
 
 .venta{
 	padding: 10px 12px;
@@ -363,6 +382,11 @@ height: 40vh;
   transform: scale(.8);
   background-color: goldenrod;
   animation: move .5s 0.1s both;
+}
+.c-auto{
+	display: flex;
+	justify-content: center;
+	
 }
 
 @keyframes move{
@@ -544,7 +568,6 @@ background-color: rgba(239, 219, 204, 1);}
 
 
 
-
 @media only screen	and (max-width: 371px){
 
 	.tituloCabecera{
@@ -581,6 +604,9 @@ background-color: rgba(239, 219, 204, 1);}
 	width: 100vw
 }
 }
+
+
+
 
 @media only screen	and (min-width: 768px){
 
