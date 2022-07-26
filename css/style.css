@@ -11,6 +11,7 @@ html{
 body{
 	height: auto;
 	background-color: #EBA973;
+	background: repeating-radial-gradient(#F0DCCC,#EBA973,#AD4E00);
 }
 
 h2 {
@@ -49,9 +50,10 @@ width: 	2.1rem;
 
 .barraNav{ 
 	display: flex;
-	background-color: #F0DCCC ;
-	justify-content:space-around;
+	background-color: rgba(240, 220, 204, .5) ;
+	justify-content:space-between;
 	align-items: flex-end;
+	padding: 0 20px;
 }
 
 .logo{
@@ -70,6 +72,7 @@ width: 	2.1rem;
     font-size: 1rem;
     border-radius: 8px;
     margin-bottom: 1rem;
+
 }
 .btnIniciaSesion:hover
 {
@@ -83,7 +86,7 @@ width: 	2.1rem;
 .dropbtn {
     padding: .5rem;
     border: none;
-    background-color: #F0DCCC;
+    background-color: rgba(240, 220, 204, 0) ;
 }
 
 .dropdown {
@@ -170,25 +173,29 @@ width: 	2.1rem;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	}
-.buscarPropiedades input{
-	padding: 10px 60px;
-	margin: 10px;
-	border-radius: 6px;
-	
-} 
-.divBuscarPropiedades{
-    display: block;
-    text-align: right;
-    width: 100%;
-    position: relative;
+	position: relative;
+	} 
+.buscarPropiedades form{
+	position: relative;
 }
 .lupaIcon{
-	width: 20px;
 	position: absolute;
-	bottom: 20px;
-	right: 20px;
+	left: 10px;
+	bottom: 16px;
 }
+.buscarPropiedades form input{
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+
 .mapaBusqueda{
 	display:flex;
 	width:96vw;
@@ -201,6 +208,7 @@ width: 	2.1rem;
 	display: flex;
 	flex-direction: column;
 }
+
 
 .quienesSomos{
 	font-size: x-large;
@@ -334,6 +342,20 @@ height: 40vh;
 	margin: 0 auto;
 	width: 75%;
 } 
+
+/*.navProductos figure{
+  z-index:1;
+  animation-name: rotar;
+  animation-timing-function: 4, jump-start;
+}*/
+ .navProductos figure:hover{
+  transform: scale(1.1);
+  /*animation: move .5s 0.1s both;*/
+}
+ .navProductos figure{
+	box-shadow: 0px 0px 15px currentcolor;
+	border-radius: 20px;
+}
 
 .venta{
 	padding: 10px 12px;
@@ -486,14 +508,15 @@ background-color: rgba(239, 219, 204, 1);}
 /* Hide the images by default */
 .mySlides {
   display: none;
-  position: relative;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
   cursor: pointer;
 }
-
+.contenedorPrevNext {
+  position: relative;
+}
 /* Next & previous buttons */
 .prev,
 .next {
@@ -503,7 +526,7 @@ background-color: rgba(239, 219, 204, 1);}
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: floralwhite;
+  color: chocolate;
   font-weight: bold;
   font-size: 30px;
   user-select: none;
@@ -589,6 +612,11 @@ background-color: rgba(239, 219, 204, 1);}
 	
 }
 
+.buscarPropiedades form input:focus {
+  width: 110%;
+
+}
+
 .tituloPrincipal{
 	font-size: medium;
 	font-weight: 200;
@@ -604,9 +632,12 @@ background-color: rgba(239, 219, 204, 1);}
 	width: 100vw
 }
 }
+@media only screen	and (min-width: 371px){
+.buscarPropiedades form input:focus {
+  width: 120%;
 
-
-
+}
+}
 
 @media only screen	and (min-width: 768px){
 
@@ -625,7 +656,9 @@ height: 80vh;
 width:45vw;
 }
 
-
+.buscarPropiedades form input:focus {
+  width:170%;
+}
 }
 @media only screen	and (min-width: 1024px){
 .cabeceraImgMd{
@@ -649,5 +682,7 @@ width:45vw;
 	flex-direction: row;
 }
 
-
+.buscarPropiedades form input:focus {
+  width:210%;
+}
 }
