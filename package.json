@@ -1,0 +1,25 @@
+{
+  "name": "repo_1",
+  "version": "1.0.0",
+  "description": "primer repo, vamos a pushear y pullear!!!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+    "sass:watch": "sass --watch scss/style.scss  css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Git-MauricioGonzalez/bootStrap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Git-MauricioGonzalez/bootStrap/issues"
+  },
+  "homepage": "https://github.com/Git-MauricioGonzalez/bootStrap#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "sass": "^1.54.0"
+  }
+}

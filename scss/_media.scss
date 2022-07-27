@@ -1,0 +1,80 @@
+
+@media only screen	and (max-width: 371px){
+
+	.tituloCabecera{
+	display: none;
+		
+	}
+	.cabecera{
+		justify-content: space-around;	
+	}
+	.logo{
+	width: 10rem;
+}
+
+.btnIniciaSesion{
+    font-size: .8rem;
+}
+.slogan{
+	font-size: small;
+	font-weight: 500;
+	
+}
+
+}
+
+@media only screen	and (min-width: 371px){
+.buscarPropiedades form input:focus {
+  width: 120%;
+
+}
+}
+
+@media only screen	and (min-width: 768px){
+
+.contactanos{ 
+height: 80vh;
+}
+
+.inicioContacto{
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+grid-template-areas:"inicioSesion contactanos" 
+"inicioSesion contactanos";
+height: 80vh;
+}
+.contactanos iframe{/*tamaño mapa movil*/
+width:45vw;
+}
+
+.buscarPropiedades form input:focus {
+  width:170%;
+}
+}
+
+@media only screen	and (min-width: 1024px){
+.cabeceraImgMd{
+	width: 100%;
+}
+.navProductos {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.encima{
+	font-size: large;
+	font-weight: 500;
+}
+
+.mision{
+	flex-direction: column-reverse;
+}
+
+.somos{
+	flex-direction: row;
+}
+
+.buscarPropiedades form input:focus {
+  width:210%;
+}
+}

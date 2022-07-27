@@ -1,0 +1,69 @@
+.bannerRegistro{
+padding-top: .5rem;
+}
+.imgBannerRegistro{
+width: 99vw;
+height: auto;
+}
+
+.inicioContacto{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr;
+grid-template-areas:"inicioSesion" 
+"contactanos";
+padding-top: 2rem;
+justify-content: center;
+text-align: center;
+
+}
+
+.altura{
+height:100%;
+}
+
+
+.inicioSesion{
+	display: flex;
+	background-color: blanchedalmond;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+	font-size: x-large;
+    grid-area: inicioSesion;
+
+}
+.inicioSesion form { 
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin: 30px;
+}
+.inicioSesion form input{
+	padding: 10px 60px;
+	margin: 10px;
+	text-align: center;
+	border-radius: 6px;
+}
+.contactanos{ 
+display: flex ;
+flex-direction: column;
+justify-content: center;
+justify-items: center;
+
+
+}
+ 
+.redesIcon{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+padding-top: 2rem;
+}
+
+iframe{/*tamaño mapa movil*/
+width:95vw;
+height: 40vh;
+}
+

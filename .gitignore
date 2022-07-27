@@ -1,5 +1,1 @@
-fuentes/
-private/
-*.log
-*.ai
-passwords.txt
+node_modules/

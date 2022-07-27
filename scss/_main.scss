@@ -1,0 +1,56 @@
+
+
+.slogan{
+	padding: 8px;
+	text-align: center;
+	font-size: medium;
+	color: 	$bgCabecera;
+	font-weight: 500;
+	
+}
+
+.tituloPrincipal{
+	margin: 1rem;
+	font-size: xx-large;
+	text-align: center;
+	color: $bgCabecera;
+}
+
+.navProductos{
+	display:inline-block;
+	text-align: center;
+		
+}
+.productos{ /*imagenes de la navegacion*/
+	font-size: 1.5rem;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	margin: 2%;
+
+}
+
+.encima{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	padding: 5%;
+	background-color:rgba(240, 220, 204, .7) ;
+	color: $hColor;
+	font-size: x-large;
+	font-weight: 500;
+}
+
+.cabeceraImgMd{
+	width: 80vw;	
+	margin: 0 auto;
+}
+.formRegistro{
+	display: flex;
+	margin: 1rem;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content:space-between;
+	font-size: medium;
+}

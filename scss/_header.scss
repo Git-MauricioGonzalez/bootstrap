@@ -1,0 +1,87 @@
+.cabecera{
+	display: flex;
+	padding: 10px;
+	background-color: 	$bgCabecera;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cabeceraIconSm{
+	width: 2rem;
+	text-decoration-style: none;
+}
+.cabeceraIconSm:hover
+{
+width: 	2.1rem;
+}
+.tituloCabecera{
+	font-size: large;
+	color:white;
+}
+
+.barraNav{ 
+	display: flex;
+	background-color: $bgNav;
+	justify-content:space-between;
+	align-items: flex-end;
+	padding: 0 20px;
+}
+
+.logo{
+	width: 15rem;
+}
+
+
+.btnIniciaSesion{/*boton de iniciar sesion en cabecera*/
+	background-color:$bgCabecera; /* Green */
+    border: none;
+    color: white;
+    padding: 5px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+
+}
+.btnIniciaSesion:hover
+{
+	background-color:#9E724D;	
+}
+
+/*____________menu hamburguesa_________________________________________________*/
+.menuHamburguesaIcon{
+    width:2rem;
+}
+.dropbtn {
+    padding: .5rem;
+    border: none;
+    background-color: $tranparente ;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $HamColor;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: $bgCabecera;
+    padding: 16px 12px;
+    text-decoration: none;
+    display: block;
+    font-weight: 400;
+}
+
+.dropdown-content a:hover {background-color:  #EBA973;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #F0DCCC;}
+

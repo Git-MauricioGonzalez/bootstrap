@@ -1,0 +1,37 @@
+
+.buscarPropiedades{
+	margin-top: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	} 
+.buscarPropiedades form{
+	position: relative;
+}
+.lupaIcon{
+	position: absolute;
+	left: 10px;
+	bottom: 16px;
+}
+.buscarPropiedades form input{
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+
+.mapaBusqueda{
+	display:flex;
+	width:96vw;
+	height:auto;
+	padding: .5rem;
+	justify-content: center;
+}

@@ -1,0 +1,25 @@
+*{
+	font-family: 'Montserrat', sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+html{
+	min-width: 	320px;
+}
+body{
+	height: auto;
+	background: $bodyColor;
+}
+
+h2 {
+	padding-top: 1rem;
+	color: $hColor;
+	font-size: xx-large;
+	text-align: center;
+}
+h3 {
+	padding-top: 1rem;
+	color: $hColor;
+	font-size: large;
+	text-align: center;
+}

@@ -1,189 +1,203 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Roboto:wght@200;300;400;500&display=swap');
-/*reset*/
-*{
-	font-family: 'Montserrat', sans-serif;
-	padding: 0px;
-	margin: 0px;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Roboto:wght@200;300;400;500&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0px;
+  margin: 0px;
 }
-html{
-	min-width: 	320px;
+
+html {
+  min-width: 320px;
 }
-body{
-	height: auto;
-	background-color: #EBA973;
-	background: repeating-radial-gradient(#F0DCCC,#EBA973,#AD4E00);
+
+body {
+  height: auto;
+  background: repeating-radial-gradient(#F0DCCC, #EBA973, #AD4E00);
 }
 
 h2 {
-	padding-top: 1rem;
-	color: #AD4E00;
-	font-size: xx-large;
-	text-align: center;
+  padding-top: 1rem;
+  color: #AD4E00;
+  font-size: xx-large;
+  text-align: center;
 }
+
 h3 {
-	padding-top: 1rem;
-	color: #AD4E00;
-	font-size: large;
-	text-align: center;
+  padding-top: 1rem;
+  color: #AD4E00;
+  font-size: large;
+  text-align: center;
 }
 
-.cabecera{
-	display: flex;
-	padding: 10px;
-	background-color: 	#6B4D34	;
-	justify-content: space-between;
-	align-items: center;
+.cabecera {
+  display: flex;
+  padding: 10px;
+  background-color: #6B4D34;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.cabeceraIconSm{
-	width: 2rem;
-	text-decoration-style: none;
-}
-.cabeceraIconSm:hover
-{
-width: 	2.1rem;
-}
-.tituloCabecera{
-	font-size: large;
-	color:white;
+.cabeceraIconSm {
+  width: 2rem;
+  text-decoration-style: none;
 }
 
-.barraNav{ 
-	display: flex;
-	background-color: rgba(240, 220, 204, .5) ;
-	justify-content:space-between;
-	align-items: flex-end;
-	padding: 0 20px;
+.cabeceraIconSm:hover {
+  width: 2.1rem;
 }
 
-.logo{
-	width: 15rem;
+.tituloCabecera {
+  font-size: large;
+  color: white;
 }
 
-
-.btnIniciaSesion{/*boton de iniciar sesion en cabecera*/
-	background-color: #6B4D34; /* Green */
-    border: none;
-    color: white;
-    padding: 5px ;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1rem;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-
+.barraNav {
+  display: flex;
+  background-color: rgba(240, 220, 204, 0.5);
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 20px;
 }
-.btnIniciaSesion:hover
-{
-	background-color: #9E724D;	
+
+.logo {
+  width: 15rem;
+}
+
+.btnIniciaSesion { /*boton de iniciar sesion en cabecera*/
+  background-color: #6B4D34; /* Green */
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.btnIniciaSesion:hover {
+  background-color: #9E724D;
 }
 
 /*____________menu hamburguesa_________________________________________________*/
-.menuHamburguesaIcon{
-    width:2rem;
+.menuHamburguesaIcon {
+  width: 2rem;
 }
+
 .dropbtn {
-    padding: .5rem;
-    border: none;
-    background-color: rgba(240, 220, 204, 0) ;
+  padding: 0.5rem;
+  border: none;
+  background-color: rgba(240, 220, 204, 0);
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgba(240, 220, 204, .9);
-    min-width: 200px;
-    z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: rgba(240, 220, 204, 0.9);
+  min-width: 200px;
+  z-index: 1;
 }
 
 .dropdown-content a {
-    color: #6B4D34;
-    padding: 16px 12px;
-    text-decoration: none;
-    display: block;
-    font-weight: 400;
+  color: #6B4D34;
+  padding: 16px 12px;
+  text-decoration: none;
+  display: block;
+  font-weight: 400;
 }
 
-.dropdown-content a:hover {background-color:  #EBA973;}
-.dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: #F0DCCC;}
-
-
-/*____________TERMINA EL HEADER_________________________________________________*/
-
-
-.slogan{
-	padding: 8px;
-	text-align: center;
-	font-size: medium;
-	color: 	#6B4D34;
-	font-weight: 500;
-	
+.dropdown-content a:hover {
+  background-color: #EBA973;
 }
 
-.tituloPrincipal{
-	margin: 1rem;
-	font-size: xx-large;
-	text-align: center;
-	color: #6B4D34;
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
-.navProductos{
-	display:inline-block;
-	text-align: center;
-		
-}
-.productos{ /*imagenes de la navegacion*/
-	font-size: 1.5rem;
-	position: relative;
-	display: inline-block;
-	text-align: center;
-	margin: 2%;
-
+.dropdown:hover .dropbtn {
+  background-color: #F0DCCC;
 }
 
-.encima{
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
-	width: 100%;
-	padding: 5%;
-	background-color:rgba(240, 220, 204, .7) ;
-	color: #AD4E00;
-	font-size: x-large;
-	font-weight: 500;
+.slogan {
+  padding: 8px;
+  text-align: center;
+  font-size: medium;
+  color: #6B4D34;
+  font-weight: 500;
 }
 
-.cabeceraImgMd{
-	width: 80vw;	
-	margin: 0 auto;
+.tituloPrincipal {
+  margin: 1rem;
+  font-size: xx-large;
+  text-align: center;
+  color: #6B4D34;
 }
-/* ---------------termina el main------------------ */
 
+.navProductos {
+  display: inline-block;
+  text-align: center;
+}
 
-.buscarPropiedades{
-	margin-top: 2rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	position: relative;
-	} 
-.buscarPropiedades form{
-	position: relative;
+.productos { /*imagenes de la navegacion*/
+  font-size: 1.5rem;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: 2%;
 }
-.lupaIcon{
-	position: absolute;
-	left: 10px;
-	bottom: 16px;
+
+.encima {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 5%;
+  background-color: rgba(240, 220, 204, 0.7);
+  color: #AD4E00;
+  font-size: x-large;
+  font-weight: 500;
 }
-.buscarPropiedades form input{
+
+.cabeceraImgMd {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.formRegistro {
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-size: medium;
+}
+
+.buscarPropiedades {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.buscarPropiedades form {
+  position: relative;
+}
+
+.lupaIcon {
+  position: absolute;
+  left: 10px;
+  bottom: 16px;
+}
+
+.buscarPropiedades form input {
   width: 100%;
   box-sizing: border-box;
   border: 2px solid #ccc;
@@ -195,269 +209,250 @@ width: 	2.1rem;
   transition: width 0.4s ease-in-out;
 }
 
-
-.mapaBusqueda{
-	display:flex;
-	width:96vw;
-	height:auto;
-	padding: .5rem;
-	justify-content: center;
-}
-.somos{
-	padding-top: 1rem;
-	display: flex;
-	flex-direction: column;
+.mapaBusqueda {
+  display: flex;
+  width: 96vw;
+  height: auto;
+  padding: 0.5rem;
+  justify-content: center;
 }
 
-
-.quienesSomos{
-	font-size: x-large;
-	background-color: chocolate;
-	color: blanchedalmond;
-	text-align: center;
-	padding: 1rem;
-}
- 
-.textoQuienesSomos{
-	font-size: large;
-	font-weight: 200;
-	background-color: blanchedalmond;
-	color: chocolate;
-	text-align: justify;
-	padding: 1rem;
-}
-.bannerRegistro{
-padding-top: .5rem;
-}
-.imgBannerRegistro{
-width: 99vw;
-height: auto;
+.somos {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
-.inicioContacto{
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: 1fr;
-grid-template-areas:"inicioSesion" 
-"contactanos";
-padding-top: 2rem;
-justify-content: center;
-text-align: center;
-
+.quienesSomos {
+  font-size: x-large;
+  background-color: chocolate;
+  color: blanchedalmond;
+  text-align: center;
+  padding: 1rem;
 }
 
-.altura{
-height:100%;
+.textoQuienesSomos {
+  font-size: large;
+  font-weight: 200;
+  background-color: blanchedalmond;
+  color: chocolate;
+  text-align: justify;
+  padding: 1rem;
 }
 
-
-.inicioSesion{
-	display: flex;
-	background-color: blanchedalmond;
-	flex-direction: column;
-	justify-content: center;
-	flex-wrap: wrap;
-	font-size: x-large;
-    grid-area: inicioSesion;
-
-}
-.inicioSesion form { 
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-	margin: 30px;
-}
-.inicioSesion form input{
-	padding: 10px 60px;
-	margin: 10px;
-	text-align: center;
-	border-radius: 6px;
-}
-.contactanos{ 
-display: flex ;
-flex-direction: column;
-justify-content: center;
-justify-items: center;
-
-
-}
- 
-.redesIcon{
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-padding-top: 2rem;
+.bannerRegistro {
+  padding-top: 0.5rem;
 }
 
-iframe{/*tamaño mapa movil*/
-width:95vw;
-height: 40vh;
+.imgBannerRegistro {
+  width: 99vw;
+  height: auto;
 }
 
-.pie{
-	background-color: rgb(56, 53, 33);
-	color: white;
-	font-size: large;
-	justify-content: center;
-	margin-top: 2rem;
-	height: 2.5rem;
-	display: flex;
-	align-items: center;
-}
-.formRegistro{
-	display: flex;
-	margin: 1rem;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content:space-between;
-	font-size: medium;
+.inicioContacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "inicioSesion" "contactanos";
+  padding-top: 2rem;
+  justify-content: center;
+  text-align: center;
 }
 
-/*inicia animaciones*/
-
-
-.galeria div img{
-	width: 50%;
-}
-.row .column img{
-	width: 50%;
+.altura {
+  height: 100%;
 }
 
-.desarrollo{
-	display: block;
-	text-align: center;	
-	
+.inicioSesion {
+  display: flex;
+  background-color: blanchedalmond;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: x-large;
+  grid-area: inicioSesion;
 }
 
-.tx-carousel{
-	font-size: large;
-	font-weight: 300;
+.inicioSesion form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
+.inicioSesion form input {
+  padding: 10px 60px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.contactanos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+
+.redesIcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 2rem;
+}
+
+iframe { /*tamaño mapa movil*/
+  width: 95vw;
+  height: 40vh;
+}
+
+.galeria div img {
+  width: 50%;
+}
+
+.row .column img {
+  width: 50%;
+}
+
+.desarrollo {
+  display: block;
+  text-align: center;
+}
+
+.tx-carousel {
+  font-size: large;
+  font-weight: 300;
   color: rgb(56, 53, 33);
-	border-radius: 20px;
-	margin-bottom: 1rem;
-	background: linear-gradient(rgba(240, 220, 204, .5),#EBA973 );
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  background: linear-gradient(rgba(240, 220, 204, 0.5), #EBA973);
 }
-.carousel{
-	margin: 0 auto;
-	width: 75%;
-} 
+
+.carousel {
+  margin: 0 auto;
+  width: 75%;
+}
 
 /*.navProductos figure{
   z-index:1;
   animation-name: rotar;
   animation-timing-function: 4, jump-start;
 }*/
- .navProductos figure:hover{
+.navProductos figure:hover {
   transform: scale(1.1);
   /*animation: move .5s 0.1s both;*/
 }
- .navProductos figure{
-	box-shadow: 0px 0px 15px currentcolor;
-	border-radius: 20px;
+
+.navProductos figure {
+  box-shadow: 0px 0px 15px currentcolor;
+  border-radius: 20px;
 }
 
-.venta{
-	padding: 10px 12px;
-	border: 2px solid black;
-	display: grid;
-	grid-template-columns: repeat(auto-fill, 100px) ; 
-	grid-template-rows: auto;
-	grid-column-gap: 90px;
-	grid-row-gap: 20px;
+.venta {
+  padding: 10px 12px;
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100px);
+  grid-template-rows: auto;
+  grid-column-gap: 90px;
+  grid-row-gap: 20px;
   margin-right: 18%;
   margin-left: 18%;
-	max-width: 100%;
-	place-content: center;
-	position: relative;
+  max-width: 100%;
+  place-content: center;
+  position: relative;
   grid-area: ventas;
 }
-.ventaContenido{
 
+.ventaContenido {
   margin-right: 18%;
   margin-left: 18%;
-	border: 2px solid black;
-	display: block;
-	max-width: 100%;
-	position: relative;
-
-
+  border: 2px solid black;
+  display: block;
+  max-width: 100%;
+  position: relative;
 }
-.Ext{
-	z-index:-2;
-	animation-name: espacios;
+
+.Ext {
+  z-index: -2;
+  animation-name: espacios;
   animation-duration: 1s;
   animation-fill-mode: both;
-
 }
 
-.venta img{
-	width: 70px;
-	height: auto;
-	border: 1px solid black;
-  z-index:1;
+.venta img {
+  width: 70px;
+  height: auto;
+  border: 1px solid black;
+  z-index: 1;
   animation-name: rotar;
   animation-duration: 5s;
   animation-timing-function: 4, jump-start;
 }
- .venta img:hover{
-  transform: scale(.8);
+
+.venta img:hover {
+  transform: scale(0.8);
   background-color: goldenrod;
-  animation: move .5s 0.1s both;
-}
-.c-auto{
-	display: flex;
-	justify-content: center;
-	
+  animation: move 0.5s 0.1s both;
 }
 
-@keyframes move{
-  100%{transform: unset;}
+.c-auto {
+  display: flex;
+  justify-content: center;
 }
 
+@keyframes move {
+  100% {
+    transform: unset;
+  }
+}
 @keyframes example {
   from {
-background-color
-:rgba(239, 219, 204, 0.3);}
+    background-color: rgba(239, 219, 204, 0.3);
+  }
   to {
-background-color: rgba(239, 219, 204, 1);}
+    background-color: rgb(239, 219, 204);
+  }
 }
 @keyframes espacios {
   from {
     margin-left: 100%;
-    width: 100%
+    width: 100%;
   }
-
   to {
     margin-left: 0%;
     width: 100%;
   }
 }
-
 @keyframes caida {
-
- from {
+  from {
     margin-top: -100%;
-    width: 100%
+    width: 100%;
   }
-
   to {
     margin-top: 0%;
     width: 100%;
   }
 }
-
 @keyframes rotar {
-
- 0%{top: -100px}
- 25%{top: 50px}
- 50%{top: 0px}
- 75%{top: 100px}
- 100%{top: 200px}
+  0% {
+    top: -100px;
+  }
+  25% {
+    top: 50px;
+  }
+  50% {
+    top: 0px;
+  }
+  75% {
+    top: 100px;
+  }
+  100% {
+    top: 200px;
+  }
 }
-
-
-.buttonVerMas{
+.buttonVerMas {
   font-size: 15px;
   cursor: pointer;
   text-align: center;
@@ -468,22 +463,21 @@ background-color: rgba(239, 219, 204, 1);}
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
-	width: 100px;
-	height: 30px;
-	top: 100%;
-	left:47%;
-
+  width: 100px;
+  height: 30px;
+  top: 100%;
+  left: 47%;
 }
 
 .buttonVerMas:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-
 }
 
-.buttonVerMas:hover {background-color: #3e8e41}
-
+.buttonVerMas:hover {
+  background-color: #3e8e41;
+}
 
 .hide {
   display: none;
@@ -496,9 +490,10 @@ background-color: rgba(239, 219, 204, 1);}
   z-index: -1;
 }
 
-.mapaVenta{
-	width: 99%;
+.mapaVenta {
+  width: 99%;
 }
+
 .galeria {
   width: 100%;
   min-height: 100vh;
@@ -514,9 +509,11 @@ background-color: rgba(239, 219, 204, 1);}
 .cursor {
   cursor: pointer;
 }
+
 .contenedorPrevNext {
   position: relative;
 }
+
 /* Next & previous buttons */
 .prev,
 .next {
@@ -538,6 +535,7 @@ background-color: rgba(239, 219, 204, 1);}
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+
 .prev {
   left: 0;
   border-radius: 0 3px 3px 0;
@@ -545,11 +543,11 @@ background-color: rgba(239, 219, 204, 1);}
 
 .prev:hover,
 .next:hover {
-  background-color: rgba(244,240, 211, 0.8);
+  background-color: rgba(244, 240, 211, 0.8);
 }
 
 .numbertext {
-  color:#9E6113;
+  color: #9E6113;
   font-size: 20px;
   padding: 1.5rem 1.5rem;
   position: absolute;
@@ -559,7 +557,7 @@ background-color: rgba(239, 219, 204, 1);}
 /* Container for image text */
 .caption-container {
   text-align: center;
-  background-color: rgba(158, 97, 19, .8);
+  background-color: rgba(158, 97, 19, 0.8);
   padding: 2px 16px;
   font-size: x-large;
   color: white;
@@ -588,101 +586,100 @@ background-color: rgba(239, 219, 204, 1);}
 }
 
 /*termina animaciones*/
-
-
-
-@media only screen	and (max-width: 371px){
-
-	.tituloCabecera{
-	display: none;
-		
-	}
-	.cabecera{
-		justify-content: space-around;	
-	}
-	.logo{
-	width: 10rem;
-}
-.btnIniciaSesion{
-    font-size: .8rem;
-}
-.slogan{
-	font-size: small;
-	font-weight: 500;
-	
-}
-
 .buscarPropiedades form input:focus {
   width: 110%;
-
 }
 
-.tituloPrincipal{
-	font-size: medium;
-	font-weight: 200;
-	}
-	.buscarPropiedades h3{
-	font-size: medium;
-	}
-	.encima{
-	font-size: large;
-	}
-	.pie{
-	font-size: medium;
-	width: 100vw
-}
-}
-@media only screen	and (min-width: 371px){
-.buscarPropiedades form input:focus {
-  width: 120%;
-
-}
+.tituloPrincipal {
+  font-size: medium;
+  font-weight: 200;
 }
 
-@media only screen	and (min-width: 768px){
-
-.contactanos{ 
-height: 80vh;
+.buscarPropiedades h3 {
+  font-size: medium;
 }
 
-.inicioContacto{
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr 1fr;
-grid-template-areas:"inicioSesion contactanos" 
-"inicioSesion contactanos";
-height: 80vh;
-}
-.contactanos iframe{/*tamaño mapa movil*/
-width:45vw;
+.encima {
+  font-size: large;
 }
 
-.buscarPropiedades form input:focus {
-  width:170%;
-}
-}
-@media only screen	and (min-width: 1024px){
-.cabeceraImgMd{
-	width: 100%;
-}
-.navProductos {
-	display:flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-.encima{
-	font-size: large;
-	font-weight: 500;
+.pie {
+  font-size: medium;
+  width: 100vw;
 }
 
-.mision{
-	flex-direction: column-reverse;
+@media only screen and (max-width: 371px) {
+  .tituloCabecera {
+    display: none;
+  }
+  .cabecera {
+    justify-content: space-around;
+  }
+  .logo {
+    width: 10rem;
+  }
+  .btnIniciaSesion {
+    font-size: 0.8rem;
+  }
+  .slogan {
+    font-size: small;
+    font-weight: 500;
+  }
+}
+@media only screen and (min-width: 371px) {
+  .buscarPropiedades form input:focus {
+    width: 120%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contactanos {
+    height: 80vh;
+  }
+  .inicioContacto {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "inicioSesion contactanos" "inicioSesion contactanos";
+    height: 80vh;
+  }
+  .contactanos iframe { /*tamaño mapa movil*/
+    width: 45vw;
+  }
+  .buscarPropiedades form input:focus {
+    width: 170%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cabeceraImgMd {
+    width: 100%;
+  }
+  .navProductos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .encima {
+    font-size: large;
+    font-weight: 500;
+  }
+  .mision {
+    flex-direction: column-reverse;
+  }
+  .somos {
+    flex-direction: row;
+  }
+  .buscarPropiedades form input:focus {
+    width: 210%;
+  }
+}
+.pie {
+  background-color: rgb(56, 53, 33);
+  color: white;
+  font-size: large;
+  justify-content: center;
+  margin-top: 2rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
 }
 
-.somos{
-	flex-direction: row;
-}
-
-.buscarPropiedades form input:focus {
-  width:210%;
-}
-}
+/*# sourceMappingURL=style.css.map */
