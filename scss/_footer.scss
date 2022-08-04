@@ -1,5 +1,5 @@
 .pie{
-	background-color: rgb(56, 53, 33);
+	background-color: map-get($map:$paleta,$key:'cafe');
 	color: white;
 	font-size: large;
 	justify-content: center;

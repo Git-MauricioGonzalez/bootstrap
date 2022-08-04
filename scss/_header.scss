@@ -1,7 +1,7 @@
 .cabecera{
 	display: flex;
 	padding: 10px;
-	background-color: 	$bgCabecera;
+	background-color: 	map-get($map:$paleta,$key:'cafe');
 	justify-content: space-between;
 	align-items: center;
 }
@@ -9,11 +9,12 @@
 .cabeceraIconSm{
 	width: 2rem;
 	text-decoration-style: none;
+    &:hover {
+        width:  2.1rem;
+    }
 }
-.cabeceraIconSm:hover
-{
-width: 	2.1rem;
-}
+
+
 .tituloCabecera{
 	font-size: large;
 	color:white;
@@ -32,23 +33,19 @@ width: 	2.1rem;
 }
 
 
-.btnIniciaSesion{/*boton de iniciar sesion en cabecera*/
-	background-color:$bgCabecera; /* Green */
-    border: none;
+.btnIniciaSesion{ 
+  @extend .btnBase;
+    background-color:map-get($map:$paleta,$key:'cafe');
     color: white;
-    padding: 5px ;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 1rem;
     border-radius: 8px;
     margin-bottom: 1rem;
+    &:hover{
+        background-color:map-get($map:$paleta,$key:'cafeClaro');   
+    }
+}
 
-}
-.btnIniciaSesion:hover
-{
-	background-color:#9E724D;	
-}
+
 
 /*____________menu hamburguesa_________________________________________________*/
 .menuHamburguesaIcon{
@@ -63,6 +60,8 @@ width: 	2.1rem;
 .dropdown {
     position: relative;
     display: inline-block;
+    &:hover .dropdown-content {display: block;}
+    &:hover  .dropbtn {background-color: map-get($map:$paleta,$key:'crema');}
 }
 
 .dropdown-content {
@@ -74,14 +73,11 @@ width: 	2.1rem;
 }
 
 .dropdown-content a {
-    color: $bgCabecera;
+    color: map-get($map:$paleta,$key:'cafe');
     padding: 16px 12px;
     text-decoration: none;
     display: block;
     font-weight: 400;
+    &:hover {background-color:  map-get($map:$paleta,$key:'salmon');}
 }
-
-.dropdown-content a:hover {background-color:  #EBA973;}
-.dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: #F0DCCC;}
 

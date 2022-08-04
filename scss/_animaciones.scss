@@ -5,40 +5,27 @@
 .row .column img{
 	width: 50%;
 }
-
 .desarrollo{
 	display: block;
 	text-align: center;	
-	
 }
-
 .tx-carousel{
 	font-size: large;
 	font-weight: 300;
   color: rgb(56, 53, 33);
 	border-radius: 20px;
 	margin-bottom: 1rem;
-	background: linear-gradient($bgNav,#EBA973 );
+	background: linear-gradient(n1,#EBA973 );
 }
 .carousel{
 	margin: 0 auto;
 	width: 75%;
 } 
-
-/*.navProductos figure{
-  z-index:1;
-  animation-name: rotar;
-  animation-timing-function: 4, jump-start;
-}*/
- .navProductos figure:hover{
-  transform: scale(1.1);
-  /*animation: move .5s 0.1s both;*/
-}
- .navProductos figure{
+.navProductos figure{
 	box-shadow: 0px 0px 15px currentcolor;
 	border-radius: 20px;
+  &:hover{transform: scale(1.1);}
 }
-
 .venta{
 	padding: 10px 12px;
 	border: 2px solid black;
@@ -55,24 +42,19 @@
   grid-area: ventas;
 }
 .ventaContenido{
-
   margin-right: 18%;
   margin-left: 18%;
 	border: 2px solid black;
 	display: block;
 	max-width: 100%;
 	position: relative;
-
-
 }
 .Ext{
 	z-index:-2;
 	animation-name: espacios;
   animation-duration: 1s;
   animation-fill-mode: both;
-
 }
-
 .venta img{
 	width: 70px;
 	height: auto;
@@ -81,26 +63,22 @@
   animation-name: rotar;
   animation-duration: 5s;
   animation-timing-function: 4, jump-start;
-}
- .venta img:hover{
-  transform: scale(.8);
-  background-color: goldenrod;
-  animation: move .5s 0.1s both;
+  &:hover{
+    transform: scale(.8);
+    background-color: goldenrod;
+    animation: move .5s 0.1s both;}
 }
 .c-auto{
 	display: flex;
 	justify-content: center;
-	
 }
 
 @keyframes move{
   100%{transform: unset;}
 }
-
 @keyframes example {
   from {
-background-color
-:rgba(239, 219, 204, 0.3);}
+background-color:rgba(239, 219, 204, 0.3);}
   to {
 background-color: rgba(239, 219, 204, 1);}
 }
@@ -140,33 +118,24 @@ background-color: rgba(239, 219, 204, 1);}
 
 
 .buttonVerMas{
+  @extend .btnBase;
   font-size: 15px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #4CAF50;
-  border: none;
+  background-color:map-get($map:$paleta,$key:’button’);
   border-radius: 15px;
-  box-shadow: 0 9px #999;
-	width: 100px;
-	height: 30px;
-	top: 100%;
-	left:47%;
-
+  // box-shadow: 0 9px #999;
+  width: 100px;
+  height: 30px;
+  top: 100%;
+  left:47%;
+  &:hover {background-color: #3e8e41}
+  &:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 }
-
-.buttonVerMas:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-
-}
-
-.buttonVerMas:hover {background-color: #3e8e41}
-
-
 .hide {
   display: none;
 }
@@ -219,6 +188,7 @@ background-color: rgba(239, 219, 204, 1);}
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+
 }
 .prev {
   left: 0;
@@ -275,20 +245,19 @@ background-color: rgba(239, 219, 204, 1);}
 
 .buscarPropiedades form input:focus {
   width: 110%;
-
 }
 
 .tituloPrincipal{
 	font-size: medium;
 	font-weight: 200;
 	}
-	.buscarPropiedades h3{
+.buscarPropiedades h3{
 	font-size: medium;
 	}
-	.encima{
+.encima{
 	font-size: large;
 	}
-	.pie{
+.pie{
 	font-size: medium;
 	width: 100vw
-}
+  }

@@ -10,16 +10,20 @@ body{
 	height: auto;
 	background: $bodyColor;
 }
+h1{
+	@include h;
+}
 
 h2 {
-	padding-top: 1rem;
-	color: $hColor;
-	font-size: xx-large;
-	text-align: center;
+	@extend h1;
+	color: map-get($map:$paleta,$key:'naranja');
 }
 h3 {
-	padding-top: 1rem;
-	color: $hColor;
+	@extend h1;
+	color: map-get($map:$paleta,$key:'naranja');
 	font-size: large;
-	text-align: center;
+}
+
+.btnBase{
+   @include btnBase;
 }

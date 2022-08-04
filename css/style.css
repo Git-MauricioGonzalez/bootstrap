@@ -15,18 +15,30 @@ body {
   background: repeating-radial-gradient(#F0DCCC, #EBA973, #AD4E00);
 }
 
-h2 {
+h1, h3, h2 {
+  margin: 1rem;
   padding-top: 1rem;
-  color: #AD4E00;
   font-size: xx-large;
   text-align: center;
+  color: #6B4D34;
+}
+
+h2 {
+  color: #AD4E00;
 }
 
 h3 {
-  padding-top: 1rem;
   color: #AD4E00;
   font-size: large;
+}
+
+.btnBase, .buttonVerMas, .btnIniciaSesion {
+  border: none;
+  padding: 5px;
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .cabecera {
@@ -41,7 +53,6 @@ h3 {
   width: 2rem;
   text-decoration-style: none;
 }
-
 .cabeceraIconSm:hover {
   width: 2.1rem;
 }
@@ -63,19 +74,13 @@ h3 {
   width: 15rem;
 }
 
-.btnIniciaSesion { /*boton de iniciar sesion en cabecera*/
-  background-color: #6B4D34; /* Green */
-  border: none;
+.btnIniciaSesion {
+  background-color: #6B4D34;
   color: white;
-  padding: 5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 1rem;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
-
 .btnIniciaSesion:hover {
   background-color: #9E724D;
 }
@@ -95,6 +100,12 @@ h3 {
   position: relative;
   display: inline-block;
 }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #F0DCCC;
+}
 
 .dropdown-content {
   display: none;
@@ -111,32 +122,12 @@ h3 {
   display: block;
   font-weight: 400;
 }
-
-.dropdown-content a:hover {
-  background-color: #EBA973;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #F0DCCC;
-}
-
 .slogan {
   padding: 8px;
   text-align: center;
   font-size: medium;
   color: #6B4D34;
   font-weight: 500;
-}
-
-.tituloPrincipal {
-  margin: 1rem;
-  font-size: xx-large;
-  text-align: center;
-  color: #6B4D34;
 }
 
 .navProductos {
@@ -171,10 +162,10 @@ h3 {
 
 .formRegistro {
   display: flex;
-  margin: 1rem;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
+  margin: 1rem;
   font-size: medium;
 }
 
@@ -218,6 +209,10 @@ h3 {
 }
 
 .somos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
@@ -225,8 +220,8 @@ h3 {
 
 .quienesSomos {
   font-size: x-large;
-  background-color: chocolate;
-  color: blanchedalmond;
+  background-color: #AD4E00;
+  color: #F0DCCC;
   text-align: center;
   padding: 1rem;
 }
@@ -234,8 +229,8 @@ h3 {
 .textoQuienesSomos {
   font-size: large;
   font-weight: 200;
-  background-color: blanchedalmond;
-  color: chocolate;
+  background-color: #F0DCCC;
+  color: #AD4E00;
   text-align: justify;
   padding: 1rem;
 }
@@ -326,7 +321,7 @@ iframe { /*tamaño mapa movil*/
   color: rgb(56, 53, 33);
   border-radius: 20px;
   margin-bottom: 1rem;
-  background: linear-gradient(rgba(240, 220, 204, 0.5), #EBA973);
+  background: linear-gradient(n1, #EBA973);
 }
 
 .carousel {
@@ -334,19 +329,12 @@ iframe { /*tamaño mapa movil*/
   width: 75%;
 }
 
-/*.navProductos figure{
-  z-index:1;
-  animation-name: rotar;
-  animation-timing-function: 4, jump-start;
-}*/
-.navProductos figure:hover {
-  transform: scale(1.1);
-  /*animation: move .5s 0.1s both;*/
-}
-
 .navProductos figure {
   box-shadow: 0px 0px 15px currentcolor;
   border-radius: 20px;
+}
+.navProductos figure:hover {
+  transform: scale(1.1);
 }
 
 .venta {
@@ -390,7 +378,6 @@ iframe { /*tamaño mapa movil*/
   animation-duration: 5s;
   animation-timing-function: 4, jump-start;
 }
-
 .venta img:hover {
   transform: scale(0.8);
   background-color: goldenrod;
@@ -454,29 +441,21 @@ iframe { /*tamaño mapa movil*/
 }
 .buttonVerMas {
   font-size: 15px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #4CAF50;
-  border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #999;
   width: 100px;
   height: 30px;
   top: 100%;
   left: 47%;
 }
-
+.buttonVerMas:hover {
+  background-color: #3e8e41;
+}
 .buttonVerMas:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-}
-
-.buttonVerMas:hover {
-  background-color: #3e8e41;
 }
 
 .hide {
@@ -672,7 +651,7 @@ iframe { /*tamaño mapa movil*/
   }
 }
 .pie {
-  background-color: rgb(56, 53, 33);
+  background-color: #6B4D34;
   color: white;
   font-size: large;
   justify-content: center;
