@@ -1,7 +1,7 @@
 {
-  "name": "repo_1",
+  "name": "Jeevit Servicios Inmobiliarios",
   "version": "1.0.0",
-  "description": "primer repo, vamos a pushear y pullear!!!",
+  "description": "Jeevit ofrece servicios de renta, venta y traspaso de bienes inmuebles",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/Git-MauricioGonzalez/bootStrap.git"
   },
-  "author": "",
+  "author": "Jeevit",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Git-MauricioGonzalez/bootStrap/issues"

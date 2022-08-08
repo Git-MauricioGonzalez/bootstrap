@@ -1,29 +1,32 @@
-*{
+* {
 	font-family: 'Montserrat', sans-serif;
 	padding: 0px;
 	margin: 0px;
 }
-html{
-	min-width: 	320px;
+
+html {
+	min-width: 320px;
 }
-body{
+
+body {
 	height: auto;
 	background: $bodyColor;
 }
-h1{
+
+h1 {
 	@include h;
 }
 
 h2 {
 	@extend h1;
-	color: map-get($map:$paleta,$key:'naranja');
+	color: map-get($map:$paleta, $key:'naranja');
 }
 h3 {
 	@extend h1;
-	color: map-get($map:$paleta,$key:'naranja');
+	color: map-get($map:$paleta, $key:'naranja');
 	font-size: large;
 }
 
-.btnBase{
-   @include btnBase;
+.btnBase {
+	@include btnBase;
 }

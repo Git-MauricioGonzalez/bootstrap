@@ -1,19 +1,21 @@
-
-
-.slogan{
+.slogan {
 	padding: 8px;
 	text-align: center;
 	font-size: medium;
-	color: 	map-get($map:$paleta,$key:'cafe');
-	font-weight: 500;	
+	color: map-get($map:$paleta, $key:'cafe');
+	font-weight: 500;
 }
 
-
-.navProductos{
-	display:inline-block;
-	text-align: center;	
+.par{
+	background-color:$HamColor;
 }
-.productos{ /*imagenes de la navegacion*/
+.navProductos {
+	display: inline-block;
+	text-align: center;
+}
+
+.productos {
+	/*imagenes de la navegacion*/
 	font-size: 1.5rem;
 	position: relative;
 	display: inline-block;
@@ -21,23 +23,24 @@
 	margin: 2%;
 }
 
-.encima{
+.encima {
 	position: absolute;
 	bottom: 0px;
 	left: 0px;
 	width: 100%;
 	padding: 5%;
-	background-color:rgba(240, 220, 204, .7) ;
-	color: map-get($map:$paleta,$key:'naranja');
+	background-color: rgba(240, 220, 204, .7);
+	color: map-get($map:$paleta, $key:'naranja');
 	font-size: x-large;
 	font-weight: 500;
 }
 
-.cabeceraImgMd{
-	width: 80vw;	
+.cabeceraImgMd {
+	width: 80vw;
 	margin: 0 auto;
 }
-.formRegistro{
+
+.formRegistro {
 	@include dFlex(column, nowrap, space-between);
 	margin: 1rem;
 	font-size: medium;

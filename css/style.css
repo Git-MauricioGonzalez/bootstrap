@@ -130,12 +130,17 @@ h3 {
   font-weight: 500;
 }
 
+.par {
+  background-color: rgba(240, 220, 204, 0.9);
+}
+
 .navProductos {
   display: inline-block;
   text-align: center;
 }
 
-.productos { /*imagenes de la navegacion*/
+.productos {
+  /*imagenes de la navegacion*/
   font-size: 1.5rem;
   position: relative;
   display: inline-block;
@@ -297,7 +302,8 @@ h3 {
   padding-top: 2rem;
 }
 
-iframe { /*tamaño mapa movil*/
+iframe {
+  /*tamaño mapa movil*/
   width: 95vw;
   height: 40vh;
 }
@@ -443,7 +449,9 @@ iframe { /*tamaño mapa movil*/
   font-size: 15px;
   outline: none;
   color: #fff;
+  background-color: #238E27;
   border-radius: 15px;
+  box-shadow: 0 3px #666;
   width: 100px;
   height: 30px;
   top: 100%;
@@ -451,6 +459,7 @@ iframe { /*tamaño mapa movil*/
 }
 .buttonVerMas:hover {
   background-color: #3e8e41;
+  box-shadow: 0 5px #666;
 }
 .buttonVerMas:active {
   background-color: #3e8e41;
@@ -464,8 +473,6 @@ iframe { /*tamaño mapa movil*/
 
 .show {
   display: block;
-  animation-name: caida;
-  animation-duration: 1.5s;
   z-index: -1;
 }
 
@@ -564,7 +571,6 @@ iframe { /*tamaño mapa movil*/
   opacity: 1;
 }
 
-/*termina animaciones*/
 .buscarPropiedades form input:focus {
   width: 110%;
 }
@@ -620,7 +626,8 @@ iframe { /*tamaño mapa movil*/
     grid-template-areas: "inicioSesion contactanos" "inicioSesion contactanos";
     height: 80vh;
   }
-  .contactanos iframe { /*tamaño mapa movil*/
+  .contactanos iframe {
+    /*tamaño mapa movil*/
     width: 45vw;
   }
   .buscarPropiedades form input:focus {

@@ -1,5 +1,4 @@
-
-.somos{
+.somos {
 	@include dFlex(column, nowrap, center);
 	padding-top: 1rem;
 	display: flex;
@@ -7,10 +6,10 @@
 }
 
 
-.quienesSomos{
+.quienesSomos {
 	@include tituloInfoEmp;
 }
- 
-.textoQuienesSomos{
+
+.textoQuienesSomos {
 	@include InfoEmp;
 }
