@@ -13,6 +13,7 @@ html {
 body {
   height: auto;
   background: repeating-radial-gradient(#F0DCCC, #EBA973, #AD4E00);
+  overflow: hidden;
 }
 
 h1, h3, h2 {
@@ -349,8 +350,8 @@ iframe {
   display: grid;
   grid-template-columns: repeat(auto-fill, 100px);
   grid-template-rows: auto;
-  grid-column-gap: 90px;
-  grid-row-gap: 20px;
+  grid-column-gap: 10px;
+  grid-row-gap: 5px;
   margin-right: 18%;
   margin-left: 18%;
   max-width: 100%;
@@ -588,14 +589,15 @@ iframe {
   font-size: large;
 }
 
-.pie {
-  font-size: medium;
-  width: 100vw;
-}
-
 @media only screen and (max-width: 371px) {
   .tituloCabecera {
     display: none;
+  }
+  .pie {
+    font-size: small;
+  }
+  h1, h2, h3 {
+    font-size: small;
   }
   .cabecera {
     justify-content: space-around;
@@ -604,16 +606,40 @@ iframe {
     width: 10rem;
   }
   .btnIniciaSesion {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
   .slogan {
     font-size: small;
     font-weight: 500;
   }
+  .venta {
+    margin: 0;
+    padding: 0;
+  }
+  .ext {
+    margin: 0;
+    padding: 0;
+  }
 }
 @media only screen and (min-width: 371px) {
   .buscarPropiedades form input:focus {
     width: 120%;
+  }
+  .logo {
+    width: 12rem;
+  }
+  .tituloCabecera {
+    font-size: medium;
+  }
+  .pie {
+    font-size: medium;
+    width: 100%;
+  }
+  h1, h2, h3 {
+    font-size: large;
+  }
+  .btnIniciaSesion {
+    font-size: 0.8rem;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -633,10 +659,16 @@ iframe {
   .buscarPropiedades form input:focus {
     width: 170%;
   }
+  h1, h2, h3 {
+    font-size: x-large;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .cabeceraImgMd {
     width: 100%;
+  }
+  .tituloCabecera {
+    font-size: large;
   }
   .navProductos {
     display: flex;
@@ -656,11 +688,13 @@ iframe {
   .buscarPropiedades form input:focus {
     width: 210%;
   }
+  h1, h2, h3 {
+    font-size: xx-large;
+  }
 }
 .pie {
   background-color: #6B4D34;
   color: white;
-  font-size: large;
   justify-content: center;
   margin-top: 2rem;
   height: 2.5rem;

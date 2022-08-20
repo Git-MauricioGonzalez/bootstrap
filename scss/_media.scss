@@ -2,7 +2,12 @@
 	.tituloCabecera {
 		display: none;
 	}
-
+.pie{
+	font-size: small;
+}
+h1{
+	font-size: small;
+}
 	.cabecera {
 		justify-content: space-around;
 	}
@@ -12,12 +17,21 @@
 	}
 
 	.btnIniciaSesion {
-		font-size: .8rem;
+		font-size: .6rem;
 	}
 
 	.slogan {
 		font-size: small;
 		font-weight: 500;
+	}
+	.venta{
+		margin:0;
+		padding:0;
+	}
+	.ext{
+		margin:0;
+		padding:0;
+		
 	}
 }
 
@@ -25,6 +39,21 @@
 	.buscarPropiedades form input:focus {
 		width: 120%;
 	}
+	.logo {
+		width: 12rem;
+	}
+	.tituloCabecera {
+    font-size: medium;}
+	.pie {
+  		font-size: medium;
+   		width: 100%;
+   	}
+   	h1{
+   		font-size: large;
+   	}
+   	.btnIniciaSesion {
+   		font-size: .8rem;
+   	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -48,13 +77,18 @@
 	.buscarPropiedades form input:focus {
 		width: 170%;
 	}
+	h1{
+	font-size: x-large;
+}
+
 }
 
 @media only screen and (min-width: 1024px) {
 	.cabeceraImgMd {
 		width: 100%;
 	}
-
+.tituloCabecera {
+    font-size: large;}
 	.navProductos {
 		display: flex;
 		flex-direction: row;
@@ -77,4 +111,7 @@
 	.buscarPropiedades form input:focus {
 		width: 210%;
 	}
+	h1{
+	font-size: xx-large;
+}
 }
