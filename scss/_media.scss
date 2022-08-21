@@ -30,8 +30,7 @@ h1{
 	}
 	.ext{
 		margin:0;
-		padding:0;
-		
+		padding:0;	
 	}
 }
 
@@ -54,6 +53,9 @@ h1{
    	.btnIniciaSesion {
    		font-size: .8rem;
    	}
+   		.imgBannerRegistro {
+	width: 96vw;
+	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -79,8 +81,7 @@ h1{
 	}
 	h1{
 	font-size: x-large;
-}
-
+	}
 }
 
 @media only screen and (min-width: 1024px) {

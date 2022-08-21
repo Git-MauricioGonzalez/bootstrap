@@ -1,9 +1,11 @@
 .bannerRegistro {
 	padding-top: .5rem;
+	display: flex;
+	justify-content:center;
 }
 
 .imgBannerRegistro {
-	width: 99vw;
+	width: 99.5vw;
 	height: auto;
 }
 
@@ -51,12 +53,9 @@
 }
 
 .contactanos {
-	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	justify-items: center;
-
-
 }
 
 .redesIcon {

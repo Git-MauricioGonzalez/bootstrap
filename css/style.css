@@ -13,7 +13,6 @@ html {
 body {
   height: auto;
   background: repeating-radial-gradient(#F0DCCC, #EBA973, #AD4E00);
-  overflow: hidden;
 }
 
 h1, h3, h2 {
@@ -243,10 +242,12 @@ h3 {
 
 .bannerRegistro {
   padding-top: 0.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 .imgBannerRegistro {
-  width: 99vw;
+  width: 99.5vw;
   height: auto;
 }
 
@@ -290,7 +291,6 @@ h3 {
 }
 
 .contactanos {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   justify-items: center;
@@ -640,6 +640,9 @@ iframe {
   }
   .btnIniciaSesion {
     font-size: 0.8rem;
+  }
+  .imgBannerRegistro {
+    width: 96vw;
   }
 }
 @media only screen and (min-width: 768px) {
