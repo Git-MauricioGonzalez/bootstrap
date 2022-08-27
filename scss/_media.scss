@@ -2,12 +2,15 @@
 	.tituloCabecera {
 		display: none;
 	}
-.pie{
-	font-size: small;
-}
-h1{
-	font-size: small;
-}
+
+	.pie {
+		font-size: small;
+	}
+
+	h1 {
+		font-size: small;
+	}
+
 	.cabecera {
 		justify-content: space-around;
 	}
@@ -24,95 +27,118 @@ h1{
 		font-size: small;
 		font-weight: 500;
 	}
-	.venta{
-		margin:0;
-		padding:0;
-	}
-	.ext{
-		margin:0;
-		padding:0;	
-	}
-}
 
-@media only screen and (min-width: 371px) {
-	.buscarPropiedades form input:focus {
-		width: 120%;
-	}
-	.logo {
-		width: 12rem;
-	}
-	.tituloCabecera {
-    font-size: medium;}
-	.pie {
-  		font-size: medium;
-   		width: 100%;
-   	}
-   	h1{
-   		font-size: large;
-   	}
-   	.btnIniciaSesion {
-   		font-size: .8rem;
-   	}
-   		.imgBannerRegistro {
-	width: 96vw;
-	}
-}
-
-@media only screen and (min-width: 768px) {
-	.contactanos {
-		height: 80vh;
+	.venta {
+		margin: 5px;
+		padding: 5px;
 	}
 
-	.inicioContacto {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
-		grid-template-areas: "inicioSesion contactanos"
-			"inicioSesion contactanos";
-		height: 80vh;
+	.ext {
+		margin: 0;
+		padding: 0;
 	}
 
-	.contactanos iframe {
-		/*tamaño mapa movil*/
-		width: 45vw;
+	.ventaContenido {
+		margin-right: 5px;
+		margin-left: 5px;
 	}
 
-	.buscarPropiedades form input:focus {
-		width: 170%;
-	}
-	h1{
-	font-size: x-large;
-	}
-}
-
-@media only screen and (min-width: 1024px) {
-	.cabeceraImgMd {
-		width: 100%;
-	}
-.tituloCabecera {
-    font-size: large;}
-	.navProductos {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+	.carousel {
+		margin: 0 auto;
+		width: 100%;}
 	}
 
-	.encima {
-		font-size: large;
-		font-weight: 500;
+	@media only screen and (min-width: 371px) {
+		.buscarPropiedades form input:focus {
+			width: 120%;
+		}
+
+		.logo {
+			width: 12rem;
+		}
+
+		.tituloCabecera {
+			font-size: medium;
+		}
+
+		.pie {
+			font-size: medium;
+			width: 100%;
+		}
+
+		h1 {
+			font-size: large;
+		}
+
+		.btnIniciaSesion {
+			font-size: .8rem;
+		}
+
+		.imgBannerRegistro {
+			width: 96vw;
+		}
 	}
 
-	.mision {
-		flex-direction: column-reverse;
+	@media only screen and (min-width: 768px) {
+		.contactanos {
+			height: 80vh;
+		}
+
+		.inicioContacto {
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+			grid-template-areas: "inicioSesion contactanos"
+				"inicioSesion contactanos";
+			height: 80vh;
+		}
+
+		.contactanos iframe {
+			/*tamaño mapa movil*/
+			width: 45vw;
+		}
+
+		.buscarPropiedades form input:focus {
+			width: 170%;
+		}
+
+		h1 {
+			font-size: x-large;
+		}
 	}
 
-	.somos {
-		flex-direction: row;
-	}
+	@media only screen and (min-width: 1024px) {
+		.cabeceraImgMd {
+			width: 100%;
+		}
 
-	.buscarPropiedades form input:focus {
-		width: 210%;
+		.tituloCabecera {
+			font-size: large;
+		}
+
+		.navProductos {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		.encima {
+			font-size: large;
+			font-weight: 500;
+		}
+
+		.mision {
+			flex-direction: column-reverse;
+		}
+
+		.somos {
+			flex-direction: row;
+		}
+
+		.buscarPropiedades form input:focus {
+			width: 210%;
+		}
+
+		h1 {
+			font-size: xx-large;
+		}
 	}
-	h1{
-	font-size: xx-large;
-}
-}
