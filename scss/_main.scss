@@ -48,3 +48,27 @@
 p{
 	margin-bottom: 0px;
 }
+.errorFondo{
+	background-image: url(../imagenes/fondoazul.png);
+	background-size: cover;
+	background-attachment:no-repeat;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+	padding-top: 10px;
+}
+
+.errorFondo a{
+	margin: 0 auto;
+}
+.btnError{
+	margin: 0 auto;
+&:hover {
+       transform: scale(1.1);
+    }
+}
+.imgError{
+	width: 60vw;
+	margin: 0 auto;
+}

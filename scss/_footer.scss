@@ -1,9 +1,13 @@
 .pie{
+	display: flex;
 	background-color: map-get($map:$paleta,$key:'cafe');
 	color: white;
 	justify-content: center;
 	margin-top: 2rem;
 	height: 2.5rem;
-	display: flex;
 	align-items: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	
 }

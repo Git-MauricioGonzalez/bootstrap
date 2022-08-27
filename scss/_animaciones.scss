@@ -172,7 +172,7 @@
   font-size: 15px;
   outline: none;
   color: #fff;
-  background-color: map-get($map:$paleta, $key:'verde');
+  background-color: map-get($map:$paleta, $key:'cafeClaro');
   border-radius: 15px;
   box-shadow: 0 3px #666;
   width: 100px;
@@ -181,12 +181,12 @@
   left: 47%;
 
   &:hover {
-    background-color: #3e8e41;
+    background-color: map-get($map:$paleta, $key:'cafe');
     box-shadow: 0 5px #666;
   }
 
   &:active {
-    background-color: #3e8e41;
+    background-color: map-get($map:$paleta, $key:'cafe');
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }

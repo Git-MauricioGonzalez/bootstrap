@@ -13,6 +13,10 @@ html {
 body {
   height: auto;
   background: repeating-radial-gradient(#F0DCCC, #EBA973, #AD4E00);
+  background-repeat: no-repeat;
+  position: relative;
+  padding-bottom: 3rem;
+  min-height: 98vh;
 }
 
 h1, h3, h2 {
@@ -176,6 +180,33 @@ h3 {
 
 p {
   margin-bottom: 0px;
+}
+
+.errorFondo {
+  background-image: url(../imagenes/fondoazul.png);
+  background-size: cover;
+  background-attachment: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 10px;
+}
+
+.errorFondo a {
+  margin: 0 auto;
+}
+
+.btnError {
+  margin: 0 auto;
+}
+.btnError:hover {
+  transform: scale(1.1);
+}
+
+.imgError {
+  width: 60vw;
+  margin: 0 auto;
 }
 
 .buscarPropiedades {
@@ -470,7 +501,7 @@ iframe {
   font-size: 15px;
   outline: none;
   color: #fff;
-  background-color: #238E27;
+  background-color: #9E724D;
   border-radius: 15px;
   box-shadow: 0 3px #666;
   width: 100px;
@@ -479,11 +510,11 @@ iframe {
   left: 47%;
 }
 .buttonVerMas:hover {
-  background-color: #3e8e41;
+  background-color: #6B4D34;
   box-shadow: 0 5px #666;
 }
 .buttonVerMas:active {
-  background-color: #3e8e41;
+  background-color: #6B4D34;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -647,6 +678,12 @@ iframe {
     margin: 0 auto;
     width: 100%;
   }
+  .btnError {
+    width: 100px;
+  }
+  .imgError {
+    width: 90vw;
+  }
 }
 @media only screen and (min-width: 371px) {
   .buscarPropiedades form input:focus {
@@ -671,6 +708,12 @@ iframe {
   .imgBannerRegistro {
     width: 96vw;
   }
+  .btnError {
+    width: 150px;
+  }
+  .imgError {
+    width: 80vw;
+  }
 }
 @media only screen and (min-width: 768px) {
   .contactanos {
@@ -691,6 +734,12 @@ iframe {
   }
   h1, h2, h3 {
     font-size: x-large;
+  }
+  .btnError {
+    width: 200px;
+  }
+  .imgError {
+    width: 60vw;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -721,15 +770,21 @@ iframe {
   h1, h2, h3 {
     font-size: xx-large;
   }
+  .btnError {
+    width: 250px;
+  }
 }
 .pie {
+  display: flex;
   background-color: #6B4D34;
   color: white;
   justify-content: center;
   margin-top: 2rem;
   height: 2.5rem;
-  display: flex;
   align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

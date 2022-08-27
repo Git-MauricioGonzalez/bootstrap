@@ -11,7 +11,10 @@ html {
 body {
 	height: auto;
 	background: $bodyColor;
-	
+	background-repeat:no-repeat;
+	position: relative;
+	padding-bottom: 3rem;
+	min-height: 98vh;
 }
 
 h1 {
