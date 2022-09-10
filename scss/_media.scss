@@ -45,122 +45,151 @@
 
 	.carousel {
 		margin: 0 auto;
-		width: 100%;}
-		.btnError{
-			width: 100px;
-		}
-	.imgError{
+		width: 100%;
+	}
+
+	.btnError {
+		width: 100px;
+	}
+
+	.imgError {
 		width: 90vw;
+	}
+	.-p {
+		font-size: small;
+	}
 }
+
+@media only screen and (min-width: 371px) {
+	.buscarPropiedades form input:focus {
+		width: 120%;
 	}
 
-	@media only screen and (min-width: 371px) {
-		.buscarPropiedades form input:focus {
-			width: 120%;
-		}
+	.logo {
+		width: 12rem;
+	}
 
-		.logo {
-			width: 12rem;
-		}
+	.tituloCabecera {
+		font-size: medium;
+	}
 
-		.tituloCabecera {
-			font-size: medium;
-		}
+	.pie {
+		font-size: medium;
+		width: 100%;
+	}
 
-		.pie {
-			font-size: medium;
-			width: 100%;
-		}
+	h1 {
+		font-size: large;
+	}
 
-		h1 {
-			font-size: large;
-		}
+	.btnIniciaSesion {
+		font-size: .8rem;
+	}
 
-		.btnIniciaSesion {
-			font-size: .8rem;
-		}
+	.imgBannerRegistro {
+		width: 96vw;
+	}
 
-		.imgBannerRegistro {
-			width: 96vw;
-		}
-		.btnError{
-			width: 150px;
-		}
-		.imgError{
-			width: 80vw;
+	.btnError {
+		width: 150px;
+	}
+
+	.imgError {
+		width: 80vw;
+	}
+	.-p {
+		font-size: medium;
+	}
 }
+
+@media (min-width: 600px) {
+	.wide {
+		grid-column: span 2;
 	}
 
-	@media only screen and (min-width: 768px) {
-		.contactanos {
-			height: 80vh;
-		}
-
-		.inicioContacto {
-			grid-template-columns: 1fr 1fr;
-			grid-template-rows: 1fr 1fr;
-			grid-template-areas: "inicioSesion contactanos"
-				"inicioSesion contactanos";
-			height: 80vh;
-		}
-
-		.contactanos iframe {
-			/*tamaño mapa movil*/
-			width: 45vw;
-		}
-
-		.buscarPropiedades form input:focus {
-			width: 170%;
-		}
-
-		h1 {
-			font-size: x-large;
-		}
-		.btnError{
-		}
-		.btnError{
-			width: 200px;
-		}
-		.imgError{
-			width: 60vw;}
+	.tall {
+		grid-row: span 2;
 	}
 
-	@media only screen and (min-width: 1024px) {
-		.cabeceraImgMd {
-			width: 100%;
-		}
+}
 
-		.tituloCabecera {
-			font-size: large;
-		}
-
-		.navProductos {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-		}
-
-		.encima {
-			font-size: large;
-			font-weight: 500;
-		}
-
-		.mision {
-			flex-direction: column-reverse;
-		}
-
-		.somos {
-			flex-direction: row;
-		}
-
-		.buscarPropiedades form input:focus {
-			width: 210%;
-		}
-
-		h1 {
-			font-size: xx-large;
-		}
-		.btnError{
-			width: 250px;
-		}
+@media only screen and (min-width: 768px) {
+	.contactanos {
+		height: 80vh;
 	}
+
+	.inicioContacto {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas: "inicioSesion contactanos"
+			"inicioSesion contactanos";
+		height: 80vh;
+	}
+
+	.contactanos iframe {
+		/*tamaño mapa movil*/
+		width: 45vw;
+	}
+
+	.buscarPropiedades form input:focus {
+		width: 170%;
+	}
+
+	h1 {
+		font-size: x-large;
+	}
+
+	.btnError {}
+
+	.btnError {
+		width: 200px;
+	}
+
+	.imgError {
+		width: 60vw;
+	}
+	.-p {
+		font-size: x-large;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.cabeceraImgMd {
+		width: 100%;
+	}
+
+	.tituloCabecera {
+		font-size: large;
+	}
+
+	.navProductos {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.encima {
+		font-size: large;
+		font-weight: 500;
+	}
+
+	.mision {
+		flex-direction: column-reverse;
+	}
+
+	.somos {
+		flex-direction: row;
+	}
+
+	.buscarPropiedades form input:focus {
+		width: 210%;
+	}
+
+	h1 {
+		font-size: xx-large;
+	}
+
+	.btnError {
+		width: 250px;
+	}
+}

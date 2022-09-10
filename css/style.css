@@ -45,6 +45,10 @@ h3 {
   cursor: pointer;
 }
 
+.w-50 {
+  width: 30%;
+}
+
 .cabecera {
   display: flex;
   padding: 10px;
@@ -138,6 +142,11 @@ h3 {
   background-color: rgba(240, 220, 204, 0.9);
 }
 
+.-p {
+  font-size: x-large;
+  color: white;
+}
+
 .navProductos {
   display: inline-block;
   text-align: center;
@@ -176,6 +185,92 @@ h3 {
   justify-content: space-between;
   margin: 1rem;
   font-size: medium;
+}
+
+.ft1 {
+  background: url("../imagenes/gal1.jpg");
+}
+
+.ft2 {
+  background: url("../imagenes/gal2.jpg");
+}
+
+.ft3 {
+  background: url("../imagenes/gal3.jpg");
+}
+
+.ft4 {
+  background: url("../imagenes/gal4.jpg");
+}
+
+.ft5 {
+  background: url("../imagenes/gal5.jpg");
+}
+
+.ft6 {
+  background: url("../imagenes/gal6.jpg");
+}
+
+.ft7 {
+  background: url("../imagenes/gal6.jpg");
+}
+
+.f1 {
+  background: url("../imagenes/terreno1.jpg");
+}
+
+.f2 {
+  background: url("../imagenes/terreno2.jpg");
+}
+
+.f3 {
+  background: url("../imagenes/terreno3.jpg");
+}
+
+.f4 {
+  background: url("../imagenes/terreno4.jpg");
+}
+
+.fo1 {
+  background: url("../imagenes/senora1.jpg");
+}
+
+.fo2 {
+  background: url("../imagenes/senora2.jpg");
+}
+
+.fo3 {
+  background: url("../imagenes/senora3.jpg");
+}
+
+.fo4 {
+  background: url("../imagenes/senora4.jpg");
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #03afff;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 30px;
+  grid-auto-flow: dense;
 }
 
 p {
@@ -684,6 +779,9 @@ iframe {
   .imgError {
     width: 90vw;
   }
+  .-p {
+    font-size: small;
+  }
 }
 @media only screen and (min-width: 371px) {
   .buscarPropiedades form input:focus {
@@ -714,6 +812,17 @@ iframe {
   .imgError {
     width: 80vw;
   }
+  .-p {
+    font-size: medium;
+  }
+}
+@media (min-width: 600px) {
+  .wide {
+    grid-column: span 2;
+  }
+  .tall {
+    grid-row: span 2;
+  }
 }
 @media only screen and (min-width: 768px) {
   .contactanos {
@@ -740,6 +849,9 @@ iframe {
   }
   .imgError {
     width: 60vw;
+  }
+  .-p {
+    font-size: x-large;
   }
 }
 @media only screen and (min-width: 1024px) {

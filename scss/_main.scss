@@ -6,9 +6,15 @@
 	font-weight: 500;
 }
 
-.par{
-	background-color:$HamColor;
+.par {
+	background-color: $HamColor;
 }
+
+.-p {
+	font-size: x-large;
+	color: white;
+}
+
 .navProductos {
 	display: inline-block;
 	text-align: center;
@@ -45,13 +51,103 @@
 	margin: 1rem;
 	font-size: medium;
 }
-p{
+
+.ft1 {
+	background: url("../imagenes/gal1.jpg");
+}
+
+.ft2 {
+	background: url("../imagenes/gal2.jpg");
+}
+
+.ft3 {
+	background: url("../imagenes/gal3.jpg");
+}
+
+.ft4 {
+	background: url("../imagenes/gal4.jpg");
+}
+
+.ft5 {
+	background: url("../imagenes/gal5.jpg");
+}
+
+.ft6 {
+	background: url("../imagenes/gal6.jpg");
+}
+
+.ft7 {
+	background: url("../imagenes/gal6.jpg");
+}
+
+.f1 {
+	background: url("../imagenes/terreno1.jpg");
+}
+
+.f2 {
+	background: url("../imagenes/terreno2.jpg");
+}
+
+.f3 {
+	background: url("../imagenes/terreno3.jpg");
+}
+
+.f4 {
+	background: url("../imagenes/terreno4.jpg");
+}
+
+.fo1 {
+	background: url("../imagenes/senora1.jpg");
+}
+
+.fo2 {
+	background: url("../imagenes/senora2.jpg");
+}
+
+.fo3 {
+	background: url("../imagenes/senora3.jpg");
+}
+
+.fo4 {
+	background: url("../imagenes/senora4.jpg");
+}
+
+.grid-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: #03afff;
+	border-radius: 4px;
+	transition: transform 0.3s ease-in-out;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.grid-item:hover {
+	filter: opacity(0.9);
+	transform: scale(1.04);
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-auto-rows: minmax(200px, auto);
+	gap: 20px;
+	padding: 30px;
+	grid-auto-flow: dense;
+}
+
+p {
 	margin-bottom: 0px;
 }
-.errorFondo{
+
+.errorFondo {
 	background-image: url(../imagenes/fondoazul.png);
 	background-size: cover;
-	background-attachment:no-repeat;
+	background-attachment: no-repeat;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -59,16 +155,19 @@ p{
 	padding-top: 10px;
 }
 
-.errorFondo a{
+.errorFondo a {
 	margin: 0 auto;
 }
-.btnError{
+
+.btnError {
 	margin: 0 auto;
-&:hover {
-       transform: scale(1.1);
-    }
+
+	&:hover {
+		transform: scale(1.1);
+	}
 }
-.imgError{
+
+.imgError {
 	width: 60vw;
 	margin: 0 auto;
 }
